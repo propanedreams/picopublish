@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "View Products";
+
+    int totalPages = ViewBag.TotalPages;
+    int currentPage = ViewBag.CurrentPage;
+    int displayRange = 5; // Number of pages to display ahead of the current page
+    int startPage = Math.Max(1, currentPage - 4); // Start displaying 5 pages before currentPage
+    int endPage = Math.Min(currentPage + displayRange, totalPages); // End displaying 5 pages after currentPage
+}
+
+<h2>Products</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("Id", "ViewProducts", new { sortOrder = ViewBag.CurrentSort == "id_asc" ? "id_desc" : "id_asc", page = ViewBag.CurrentPage })
+            </th>
+            <th>
+                @Html.ActionLink("Name", "ViewProducts", new { sortOrder = ViewBag.CurrentSort == "name_asc" ? "name_desc" : "name_asc", page = ViewBag.CurrentPage })
+            </th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Pagination controls -->
+<div>
+    @if (totalPages > 1)
+    {
+        <ul class="pagination">
+            @if (currentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ViewProducts", new { page = currentPage - 1, sortOrder = ViewBag.CurrentSort })">Previous</a>
+                </li>
+            }
+
+            <!-- Always show the first page -->
+            <li class="page-item @(1 == currentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("ViewProducts", new { page = 1, sortOrder = ViewBag.CurrentSort })">1</a>
+            </li>
+
+            @if (startPage > 2)  // Ellipsis if there is a gap between first page and startPage -->
+            {
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+            }
+
+            <!-- Display pages around the current page -->
+            @for (int i = startPage; i <= endPage; i++)
+            {
+                @if (i != 1 && i != totalPages) // Avoid displaying the first or last page again
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("ViewProducts", new { page = i, sortOrder = ViewBag.CurrentSort })">@i</a>
+                    </li>
+                }
+            }
+
+            @if (endPage < totalPages - 1) 
+           // !-- Ellipsis if there is a gap between endPage and last page -->
+            {
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+            }
+
+            <!-- Always show the last page -->
+            <li class="page-item @(totalPages == currentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("ViewProducts", new { page = totalPages, sortOrder = ViewBag.CurrentSort })">@totalPages</a>
+            </li>
+
+            @if (currentPage < totalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ViewProducts", new { page = currentPage + 1, sortOrder = ViewBag.CurrentSort })">Next</a>
+                </li>
+            }
+        </ul>
+    }
+</div>

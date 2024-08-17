@@ -1,0 +1,176 @@
+Id,Name,Description
+1,rugbrød,meget tørt
+2,hvid monster,programmørbrændstof
+3,rugbrød,meget tørt
+4,ris,husk salt
+5,voidwaker,husk at praye magic
+6,chokolade,godt for sjælen
+7,kaffe,livseliksir
+8,banan,kaliumbombe
+9,pasta,perfekt med pesto
+10,bacon,alt bliver bedre med bacon
+11,mælk,stærke knogler
+12,yoghurt,cremet og lækkert
+13,æg,naturens egen proteinbar
+14,smør,smelter på alt
+15,ost,ost er livet
+16,brie,fransk lækkeri
+17,oksekød,saftig bøf
+18,grøn te,beroligende bryg
+19,spinat,fuld af jern
+20,broccoli,små grønne træer
+21,avocado,sundt fedt
+22,tomat,juicy og sød
+23,agurk,forfriskende sprødhed
+24,karrypulver,smagfuld krydderi
+25,salt,livets krydderi
+26,peber,tilføjer lidt bid
+27,honning,naturlig sødme
+28,jordbær,søde sommerbær
+29,blåbær,fantastiske antioxidanter
+30,hindbær,syrlig sødme
+31,æble,dansk klassiker
+32,pære,saftig frugt
+33,appelsin,C-vitamin boost
+34,mandler,sunde snacks
+35,hasselnødder,godt med chokolade
+36,cashwenødder,cremet nød
+37,linser,proteinrig base
+38,kikærter,perfekt til hummus
+39,quinoa,glutenfri superfood
+40,couscous,nem og hurtig
+41,bulgur,fyldig og fiberrig
+42,sød kartoffel,velsmagende alternativ
+43,gulerod,sprød og farverig
+44,peanutbutter,sjælens trøst
+45,salsa,spicy dip
+46,guacamole,avocadoens bedste ven
+47,tortilla chips,crunchy og salte
+48,kiks,ideel til ost
+49,cherrytomater,søde små snacks
+50,majs,perfekt på grillen
+51,fuldkornsbrød,fiberrigt og sundt
+52,fuldkornspasta,mere mæthed
+53,cottage cheese,proteinrigt og let
+54,cheddar,smagfuld ost
+55,mozzarella,perfekt til pizza
+56,parmesan,italiens skatte
+57,basilikum,frisk og aromatisk
+58,oregano,pizzakrydderi
+59,timian,klassisk urt
+60,rosmarin,tilføjer dybde
+61,ingefær,varmer kroppen
+62,hvidløg,immunstyrkende knold
+63,løg,til alle retter
+64,chili,tilføjer varme
+65,sojasovs,umami smag
+66,tahin,sesampasta
+67,græskarkerner,knasende topping
+68,solsikkekerner,godt i salater
+69,chiafrø,fiberpower
+70,havregryn,klassisk morgenmad
+71,misosuppe,japansk favorit
+72,sushiris,perfekte til sushi
+73,wasabi,stærkt og skarpt
+74,sirup,sødt på pandekager
+75,grønkål,sund superfood
+76,rødbede,rig på næring
+77,kål,fiber til maven
+78,mandelmælk,vegansk alternativ
+79,rismælk,let og læskende
+80,sojamælk,proteinrigt alternativ
+81,vegetarburger,sundt og mættende
+82,tofu,proteinalternativ
+83,tempeh,gæret sojabønner
+84,oliven,fyldige og salte
+85,pesto,basilikums magi
+86,tun,protein på dåse
+87,laks,righoldig på omega-3
+88,rejer,let og lækker
+89,kyllingebryst,magert protein
+90,lam,fyldig smag
+91,kalvekød,mørt og lækkert
+92,bagels,morgenmad på farten
+93,smoothie,sund og hurtig
+94,proteinbar,energi on-the-go
+95,grapefrugt,syrlig friskhed
+96,cantaloupe melon,sød saftighed
+97,kiwi,eksotisk frugt
+98,ananas,tropisk sødme
+99,mango,frugternes konge
+100,kokosvand,naturlig elektrolyt
+101,pebermynte,frisk ånde
+102,kanel,tilføjer varme
+103,muskatnød,perfekt i bagværk
+104,havsalt,groft og rent
+105,lakrids,sødt og salt
+106,persille,grønt drys
+107,dild,perfekt til fisk
+108,rosiner,søde små snacks
+109,gojibær,superfood
+110,mørk chokolade,antioxidant rigdom
+111,mælkechokolade,blød og sød
+112,hvid chokolade,cremet og rig
+113,marmelade,sød frugtspredning
+114,peberfrugt,farverigt fyld
+115,zucchini,mangfoldig grøntsag
+116,aubergine,mørk og fyldig
+117,squash,let og alsidig
+118,champignon,umami på top
+119,portobello,sprødt og kødfuldt
+120,cashewnøddesmør,cremet sundhed
+121,birkes,små smagsbomber
+122,mælkebøtteblade,bitter sundhed
+123,grønkålschips,sprøde og sunde
+124,solsikkespirer,nutty sprødhed
+125,falafel,kikærtebolde
+126,gnocchi,kartoffelbløde bidder
+127,popcorn,bio-snack
+128,salami,smagfuld pølse
+129,prosciutto,italiensk delikatesse
+130,pepperoni,pizzafavorit
+131,røget laks,delikat og rig
+132,sashimi,ren fiskesmag
+133,wasabiærter,sprøde og stærke
+134,brownie,chokoladedrøm
+135,muffins,lækre små kager
+136,croissant,sprød og smørfyldt
+137,brioche,blød og luftig
+138,baguette,fransk klassiker
+139,wraps,nemme og alsidige
+140,tacos,smagsfulde bid
+141,nachos,crunchy og ostede
+142,burrito,fyldt og mættende
+143,salsa verde,grøn salsa
+144,tomatpuré,koncentreret smag
+145,passata,silketomater
+146,hakkede tomater,basen for sauce
+147,fiskesauce,umami i flydende form
+148,hummus,kikærtecreme
+149,tabouleh,bulgursalat
+150,baba ganoush,aubergine dip
+151,tzatziki,yoghurt med hvidløg
+152,feta,saltet græsk ost
+153,halloumi,grillost
+154,camembert,mild og cremet
+155,gouda,glat og sød
+156,stilton,blåskimmelost
+157,grønne oliven,syltede snacks
+158,sort peber,klassisk krydderi
+159,chiliflager,varm smag
+160,kokosolie,til stegning og bagning
+161,avocadoolie,sundt fedtstof
+162,ristet sesamolie,aromabombe
+163,hvedemel,basis for bagværk
+164,rugmel,fiberrigt mel
+165,mandelmel,glutenfri alternativ
+166,kokosmel,sødt og duftende
+167,bagepulver,hævemiddel
+168,natron,multifunktionelt pulver
+169,vaniljesukker,sødt og aromatisk
+170,konditorfarve,farverig dekoration
+171,agavesirup,naturlig sødning
+172,lønnesirup,sød og rig
+173,proteinshake,godt for musklerne
+174,chili,spicy
+175,Gulvlampe,oplysende

@@ -1,0 +1,17 @@
+﻿<h2>Indsæt et nyt produkt</h2>
+<nav>    
+        <a href="/Product/ViewProducts">Vis Produkter</a>  
+</nav>
+<form asp-action="InsertProduct" method="post">
+    <div>
+        <label>Navn:</label>
+        <input type="text" name="Name" required />
+    </div>
+    <div>
+        <label>Beskrivelse:</label>
+        <textarea name="Description"></textarea>
+    </div>
+    <div>
+        <button type="submit">Indsæt Produkt</button>
+    </div>
+</form>
