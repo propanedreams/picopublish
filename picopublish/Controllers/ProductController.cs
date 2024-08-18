@@ -72,7 +72,7 @@ public class ProductController : Controller
     [HttpGet]
     public IActionResult Edit(int id)
     {
-        if (id == 0 || id == null)
+        if (id == 0)
         { id = 1; }
 
         var product = _productService.GetProductById(id);
@@ -85,9 +85,9 @@ public class ProductController : Controller
     }
 
     [HttpPost]
-    public IActionResult Edit(int productId, int i = 2)
+    public IActionResult Edit(Product product)
     {
-        var product = _productService.GetProductById(productId);
+        //var product = _productService.GetProductById(productId);
 
         if (!ModelState.IsValid)
         {

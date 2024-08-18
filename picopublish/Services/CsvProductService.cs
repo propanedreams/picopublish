@@ -21,6 +21,17 @@
             }
         }
 
+        public int CountItemsInCsv()
+        {
+           
+
+            // Read all lines in the file
+            var lines = File.ReadAllLines(_filePath);
+
+
+            return lines.Length;
+        }
+
         public IEnumerable<Product> GetProducts(int page, int pageSize)
         {
             var products = ReadProductsFromFile();
@@ -80,15 +91,21 @@
 
         public Product GetProductById(int id)
         {
-            var products = GetProducts(1, int.MaxValue);
+            int max = CountItemsInCsv();
+            var products = GetProducts(1, max);
             return products.FirstOrDefault(p => p.Id == id);
         }
         public bool UpdateProduct(Product updatedProduct)
         {
-            var products = GetProducts(1, int.MaxValue)?.ToList();
+            int max = CountItemsInCsv();
+            if (updatedProduct == null)
+            {
+                throw new ArgumentNullException(nameof(updatedProduct));
+            }
+
+            var products = GetProducts(1, max)?.ToList();
             if (products == null)
             {
-                // Handle the scenario where products list is null
                 return false;
             }
 
@@ -101,9 +118,10 @@
             existingProduct.Name = updatedProduct.Name;
             existingProduct.Description = updatedProduct.Description;
 
-            SaveProducts(products); // Save updated list to CSV file
+            SaveProducts(products);
             return true;
         }
+
 
     }
 

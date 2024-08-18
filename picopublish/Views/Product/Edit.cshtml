@@ -13,7 +13,6 @@
         <select asp-for="Id" class="form-control" onchange="document.getElementById('productForm').submit();">
             @foreach (int i in ids)
             {
-                
                 <option value="@i">@i</option>
             }
         </select>
@@ -22,6 +21,8 @@
 </form>
 
 <form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
     <div class="form-group">
         <label asp-for="Name" class="control-label">Name</label>
         <input asp-for="Name" class="form-control" />
